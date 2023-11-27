@@ -1,103 +1,119 @@
 @extends('frontend.layout')
 @section('title','About Us')
 @section('content')
-<style type="text/css">
-
-</style>
-    <section class="">
-        <div class="bg-dark-alt position-relative">
-            <div class="pb-lg-6 pb-5 pt-7 postion-relative z-index-2">
-                <div class="row mt-5">
-                    <div class="col-md-8 mx-auto text-center mt-4">
-                            <h2 class="text-white">
-                                About Us
-                            </h2>
-                    </div>
+<!--start hero area-->
+<section class="page-banner-area">
+    <div class="container">
+        <div class="row">
+            <!--start heading-->
+            <div class="col-lg-10 offset-lg-1">
+                <div class="banner-content text-center">
+                    <h1>About Us</h1>
+                    <p><a href="{{ url('') }}">Home</a> <span> > </span>About Us</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="section-padding-03 overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="section-title-10 justify-content-start text-start align-items-start">
-                        <span class="section-title-10__subtitle">About Capa</span>
-                        <h1 class="section-title-10__title">We speak the good food language.</h1>
-                        <p class="section-title-10__text text-justify">Welcome to the world of sweetness, where flour, sugar, and creativity come together in harmony! At CAPA - The Cakeuncle Academy of Pastry Arts, we take baking, pastry, and cake-making to new heights From the bustling streets of India to the distant shores of the world, we welcome students from all corners of the globe to experience the sweetest education in the land. Our "Advance Diploma in Patisserie" is not just a piece of paper, it's a passport to a world of Pastry delight, approved by the Government of India and offering a comprehensive education of international standards.</p>
-                        <p class="section-title-10__text text-justify">With an experience of 15 years in the field providing international levels skills and knowledge for every part, personal attention and assistance to everyone all this at very economic rates, and accommodation benefits for international students So if looking to turn your passion for baking into a thriving career, look no further than CAPA ! Join us today and let us help you create a sweet future for yourself!</p>
-                        <div class="text-start buttons mb-4">
-                            <a style="width: 100%;" href="{{ url('signup') }}" type="button" class="btn  btn-success text-white mt-4">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="aboutus-image">
-                        <img src="{{ url('public/assets/images/about/about.jpg')}}" alt="About-Image">
-                    </div>
-                </div>
-            </div>
+            <!--end heading-->
         </div>
     </div>
-    <section class="py-6 bg-gray-100 team_member">
-        <div class="testimonial-active-two my-0 mx-auto" >
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="fw-bolder display-5 text-center mt-2 mb-0">{{__('Team Member')}}</h1>
-                    </div>
+</section>
+<!--end hero area-->
+<!--start about area-->
+<section class="about-area four" style="padding: 0px;">
+    <div class="container">
+        <div class="row">
+            <!--start sec-heading-->
+            <div class="col-lg-12">
+                <div class="sec-heading text-center">
+                    <h4>Who we are</h4>
+                    <h2>We Are Providing The Best Quality Online Courses. Our All Instructors Are High Expert</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 mt-5">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <div class="member-image cell-left">
-                                    <img src="{{ url('public/img/niharika.jpeg') }}" class="img-fluid border-radius-lg">
-                                </div>
-                                <div class="member-name">
-                                    <div class="testimonial-name"><span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Co Founder</span>
-                                        <p href="javascript:void(0)" class="text-darker card-title h5 d-block">
-                                                Ms. Niharika Rajput
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <!--end sec-heading-->
+        </div>
+    </div>
+</section>
+<!--end about us-->
+<!--start why choose area-->
+<section class="why-choose-area three bg-gray">
+    <div class="container">
+        <div class="row">
+            <!--start why choose heading-->
+            <div class="col-lg-8 offset-lg-2">
+                <div class="sec-heading  text-center">
+                    <h4>Best learning platform </h4>
+                    <h2>Why We Are The Best</h2>
+                </div>
+            </div>
+            <!--end why choose heading-->
+        </div>
+        <div class="row text-center">
+            <!--start choose single-->
+            <div class="col-md-4">
+                <div class="choose-single three">
+                    <div class="why-choose-icon three">
+                        <img src="{{ url('public/frontend/images/icons/ribbon.svg') }}" alt="image">
                     </div>
-                    <div class="col-md-4 mt-5">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <div class="member-image cell-left">
-                                    <img src="{{ url('public/img/chitaniya.jpeg') }}" class="img-fluid border-radius-lg">
-                                </div>
-                                <div class="member-name">
-                                    <div class="testimonial-name"><span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Co Founder</span>
-                                        <p href="javascript:void(0)" class="text-darker card-title h5 d-block">
-                                           Mr. Chaitanya Rajput
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-5">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <div class="member-image cell-left">
-                                    <img src="{{ url('public/img/jaspreet.jpeg') }}" class="img-fluid border-radius-lg">
-                                </div>
-                                <div class="member-name">
-                                    <div class="testimonial-name"><span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Executive Chef</span>
-                                        <p href="javascript:void(0)" class="text-darker card-title h5 d-block">
-                                            Ms. Jaspreet Kaur
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="why-choose-cont three">
+                        <h3>High Quality Courses</h3>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. </p>
                     </div>
                 </div>
             </div>
+            <!--end choose single-->
+            <!--start choose single-->
+            <div class="col-md-4">
+                <div class="choose-single three">
+                    <div class="why-choose-icon three">
+                        <img src="assets/images/icons/teacher.svg" alt="image">
+                    </div>
+                    <div class="why-choose-cont three">
+                        <h3>Expert Instructors</h3>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. </p>
+                    </div>
+                </div>
+            </div>
+            <!--end choose single-->
+            <!--start choose single-->
+            <div class="col-md-4">
+                <div class="choose-single three">
+                    <div class="why-choose-icon three">
+                        <img src="assets/images/icons/folder.svg" alt="image">
+                    </div>
+                    <div class="why-choose-cont three">
+                        <h3>Life Time Access</h3>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. </p>
+                    </div>
+                </div>
+            </div>
+            <!--end choose single-->
         </div>
-    </section>
+    </div>
+</section>
+<!--end why choose area-->
+<!--start testimonial area-->
+<section class="testimonial-area two">
+    <div class="container">
+        <div class="row">
+            <!--start sec-heading-->
+            <div class="col-lg-8 offset-lg-2">
+                <div class="sec-heading text-center">
+                    <h2>Testimonials</h2>
+                </div>
+            </div>
+            <!--end sec-heading-->
+        </div>
+        <div>
+            <blockquote class="font_4 wixui-rich-text__text" style="line-height:1.3em; text-align:center; font-size:35px;">“Good Thinkers are always in demand. They solve problems, never lack ideas, and always have hope for a better future Datasphere and Genai-training is the best example of the above.”</blockquote>
+        </div>
+        <div id="comp-j7ghhy8y" class="KcpHeO tz5f0K comp-j7ghhy8y wixui-rich-text" data-testid="richTextElement" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;">
+            <p class="font_8 wixui-rich-text__text" style="line-height:1.7em; text-align:center; font-size:16px;">
+                <span style="letter-spacing:0.04em;" class="wixui-rich-text__text">
+                    <span class="color_18 wixui-rich-text__text">
+                        <span style="font-weight:bold; color:red;" class="wixui-rich-text__text">Waseem Akram<br class="wixui-rich-text__text">
+            CEO of EpicSoft</span></span></span></p>
+        </div>
+    </div>
+</section>
+<!--end testimonial area-->
 @endsection

@@ -91,6 +91,7 @@ class FrontendController extends WebsiteBaseController
     }
     public function home()
     {
+     
         $current_build_id = config("app.build_id", 1);
         $installed_build_id = $this->super_settings["installed_build_id"] ?? 0;
 
