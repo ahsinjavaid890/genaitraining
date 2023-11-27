@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\CertificateReceive;
+use App\Models\CoursePurchase;
+use Illuminate\Http\Request;
+
+class CertificateReceiveController extends BaseController
+{
+    public function saveCertificateReceived(Request $request)
+    {
+        $request->validate([
+            "certificate_id" => "required|integer",
+            "student_id" => "required|integer",
+        ]);
+
+        $course_purchased = false;
+
+        if ($request->id) {
+            $course_purchased = CertificateReceive::find($request->id)->first();
+        }
+
+        if (!$course_purchased) {
+            $course_purchased = new CertificateReceive();
+        }
+        $course_purchased->certificate_id = $request->certificate_id;
+
+        $course_purchased->student_id = $request->student_id;
+        $course_purchased->save();
+
+
+        $certificatenumber = CertificateReceive::find($course_purchased->id);
+        $certificatenumber->certificate_number = 'CAPA00'.$course_purchased->id;
+        $certificatenumber->save();
+
+
+
+        return redirect()->back();
+    }
+}
